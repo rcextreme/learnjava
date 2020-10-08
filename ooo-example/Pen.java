@@ -1,14 +1,32 @@
-public class Main {
-    public static void main(String[] args){
-        Pen a = new Pen();
+public class Pen {
+    String type;
+    String color;
 
-        a.setColor("blue");
-        a.setType("ballpoint");
-        System.out.println(a.getColor());
-        System.out.println(a.getType());
+    public static boolean clicked = false;
 
-        a.click();
-        System.out.println(a.clicked);
-
+    public static void click() {
+        clicked = true;
     }
+
+    public static void unClick() {
+        clicked = false;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
 }
