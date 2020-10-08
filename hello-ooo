@@ -1,10 +1,15 @@
 public class Sentence {
     String firstSentence;
+    String secondSentence;
 
     public static void main(String[] args){
         Sentence a = new Sentence();
+
         a.setFirstSentence("Hello world!");
+        a.secondSentence = "Good bye";
+
         System.out.println(a.getFirstSentence());
+        System.out.println(a.secondSentence);
 
     }
 
